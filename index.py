@@ -10,4 +10,4 @@ def func():
                     {"index":"1234"},
 
                     ]) 
-app.run(port=4500)
+app.run(port=4500,host="44.226.145.213")
