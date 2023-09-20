@@ -6,10 +6,9 @@ r.set('index','ram')
 with open('ram.json') as kal:
     read=kal.read()
 app=Flask(__name__)
-title="kalyan"
 @app.route("/",methods=['POST','GET'])
 def func():
-    global title
+    title="kalyan"
     if request.method=='POST':
         title = request.json['index']
     return jsonify([{"index":title}]) 
