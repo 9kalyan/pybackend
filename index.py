@@ -9,6 +9,7 @@ app=Flask(__name__)
 title="kalyan"
 @app.route("/",methods=['POST','GET'])
 def func():
+    global title
     if request.method=='POST':
         title = request.json['title']
         return title
