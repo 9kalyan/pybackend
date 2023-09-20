@@ -7,7 +7,7 @@ def func():
                     {"index":"poijkl"},
                     {"index":"kalyanert"},
                     {"index":"12345"},
-                    {"index":"kalyan ram is greet"},
+                    {"index":"kalyan ram is excellent"},
 
                     ]) 
 app.run(port=4500,host="0.0.0.0")
