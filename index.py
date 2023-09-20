@@ -11,7 +11,7 @@ title="kalyan"
 def func():
     global title
     if request.method=='POST':
-        title = request.json['title']
+        title = request.json['index']
         return title
     return jsonify([{"index":title}]) 
 app.run(port=4500,host="0.0.0.0")
