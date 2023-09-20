@@ -1,4 +1,6 @@
 from flask import Flask,jsonify
+with open('ram.json') as kal:
+    read=kal.read()
 app=Flask(__name__)
 @app.route("/")
 def func():
