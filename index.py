@@ -1,6 +1,6 @@
 from flask import Flask,jsonify
 import redis as rd
-r = rd.Redis(host='redis://red-ck5dggeru70s73buhagg', port=6379, decode_responses=True)
+r = rd.Redis(host='red-ck5dggeru70s73buhagg', port=6379, decode_responses=True)
 r.set('index', 'bar')
 with open('ram.json') as kal:
     read=kal.read()
